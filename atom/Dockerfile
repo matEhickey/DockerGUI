@@ -1,7 +1,12 @@
 FROM ubuntu:14.04
 
-RUN apt-get update && apt-get install -y firefox
-RUN apt-get install ubuntu-restricted-extras -y
+RUN apt-get update
+RUN apt-get install software-properties-common -y
+
+RUN add-apt-repository ppa:webupd8team/atom
+RUN apt-get update
+RUN apt-get install libxss1 -y
+RUN apt-get install atom -y
 
 # Replace 1000 with your user / group id
 RUN export uid=1000 gid=1000 && \
@@ -14,4 +19,4 @@ RUN export uid=1000 gid=1000 && \
 
 USER developer
 ENV HOME /home/developer
-CMD /usr/bin/firefox
+CMD /usr/bin/atom -w

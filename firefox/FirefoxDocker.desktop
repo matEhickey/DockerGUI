@@ -3,7 +3,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Terminal=true
+Terminal=false
 Exec=/opt/docker-cli-firefox.sh
 Name=FirefoxDocker
 Comment=Firefox on Docker
