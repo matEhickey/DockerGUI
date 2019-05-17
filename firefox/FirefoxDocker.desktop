@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=/opt/docker-cli-firefox.sh
+Name=FirefoxDocker
+Comment=Firefox on Docker
+Icon=/usr/share/icons/firefoxdocker.png
+Name[en_US]=FirefoxDocker

@@ -1,4 +1,5 @@
 #!/usr/bin/env xdg-open
+
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -7,3 +8,4 @@ Exec=/opt/docker-cli-blender.sh
 Name=BlenderDocker
 Comment='Blender on Docker'
 Icon=/usr/share/icons/blenderdocker.png
+Name[en_US]=TemplateDocker

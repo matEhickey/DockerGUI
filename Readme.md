@@ -4,6 +4,14 @@
 
 
 ## HOW-TO:  
+
+### TLDR: 
+Duplicate the template folder, change configuaration / dockerfile, then:
+~~~sh
+sudo ./build.sh
+~~~
+
+### Detailed configuration
 Create the base Dockerfile from ubuntu, install your program and add the config:  
 ~~~sh
 FROM ubuntu:14.04
