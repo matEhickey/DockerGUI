@@ -1,12 +1,15 @@
 # DOCKER GUI containers
 
-> see: https://msftstack.wordpress.com/2015/09/13/adding-a-docker-container-icon-in-ubuntu-unity-desktop/
-
-
 ## HOW-TO:  
 
 ### TLDR: 
-Duplicate the template folder, change configuaration / dockerfile, then:
+Wait for the yeoman generator.
+
+Or:
+- duplicate '\_GENERATOR/template' to wherever you want, 
+- customise the scripts by renaming all 'template' stuff / change the icon
+- install what you want into the Dockerfile
+- launch:
 ~~~sh
 sudo ./build.sh
 ~~~
@@ -50,3 +53,6 @@ Name=<Name>
 Comment=<Command>
 Icon=<path to icon (probably in /usr/share/icons/)>
 ~~~
+
+Create the icon:
+- you can use the gimp template provided in '/\_GENERATOR/IconCreator/'

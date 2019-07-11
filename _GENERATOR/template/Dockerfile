@@ -1,8 +1,14 @@
 FROM ubuntu:14.04
 
+# INSTALL WHAT YOU WANT BELOW
+
 RUN apt-get update && apt-get install -y blender
 
-# Replace 1000 with your user / group id
+
+
+
+
+# Replace 1000 with your user / group_id if needed
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
     echo "developer:x:${uid}:${gid}:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
@@ -13,4 +19,6 @@ RUN export uid=1000 gid=1000 && \
 
 USER developer
 ENV HOME /home/developer
+
+# Change your default command
 CMD /usr/bin/blender
